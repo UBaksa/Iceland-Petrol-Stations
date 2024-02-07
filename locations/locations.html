@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <title>Iceland Petrol Stations | Locations</title>
+    <link rel="stylesheet" href="./locations.css">
+    <link rel="stylesheet" href="../homepage/index.css">
+    <script src="./locations.js" defer></script>
+    <link rel="icon" href="../images/logo icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+</head>
+<body>
+    <div id="preloader"></div>
+    <header>
+        <div class="header-left">
+        <img src="../images/finalni logo za sajt.png" alt="logo">
+        </div>
+        <div class="header-right">
+        <ul>
+            <li><a href="../homepage/index.html">Home</a></li>
+            <li><a href="../prices/prices.html">Prices</a></li>
+            <li><a href="#" id="active">Locations</a></li>
+            <li><a href="#">Membership</a></li>
+            <li><a href="#">Promo</a></li>
+            <button>Sign in</button>
+            <button id="serbian">Srpski</button>
+            <button id="english">Engleski</button>
+        </ul>
+        </div>
+    </header>
+    <div class="location">
+        <div class="location-text">
+            <H3>Looking for nearest petrol station?</H3>
+            <p>Embark on a hassle-free journey and fuel up smartly! Searching for the nearest gas station with competitive prices? Look no further! Our conveniently located station not only offers proximity but also boasts wallet-friendly fuel rates. Enjoy the ease of refueling without breaking the bank. Drive with confidence, knowing you're headed to the closest pit stop for both your car and your budget. Discover quality service and great prices – because your journey should be as smooth on your vehicle as it is on your wallet. Fuel up and hit the road with savings in every kilometer!</p>
+        </div>
+        <div class="location-image"><img src="../images/finalni logo za sajt.png" alt=""></div>
+    </div>
+    <div class="select-location">
+        <div class="select-location-title">
+            <h1><I>PUMP LOCATIONS</I></h1>
+        <br>
+        <br>
+        <hr>
+        </div>
+        <div class="select-location-map">
+            <div class="selection-select">
+                <select name="pump" id="pump">
+                </select>
+                </div>
+            <div id="map"></div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-text">
+            <div class="footer-text-info">
+                <p>Informations</p>
+                <ul>
+                    <li>Prices</li>
+                    <li>Locations</li>
+                    <li>Promotions</li>
+                    <li>Registration</li>
+                </ul>
+            </div>
+            <div class="footer-text-info">
+                <p>Contact</p>
+                <ul>
+                    <li>Bakir Ujkanovic</li>
+                    <li>Novi Pazar,Serbia</li>
+                    <li>ujkanovicbakir@gmail.com</li>
+                    <li>github.com/UBaksa</li>
+                </ul>
+            </div> 
+        </div>
+        <div class="footer-img">
+            <img src="../images/finalni logo za sajt.png" alt="">
+        </div>
+    </footer>
+</body>
+</html>

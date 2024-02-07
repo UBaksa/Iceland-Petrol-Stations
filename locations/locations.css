@@ -1,0 +1,143 @@
+#preloader{
+    background: aliceblue url("../images/finalni\ logo\ za\ sajt.png") no-repeat center center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.location{
+    margin-top: 2%;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+}
+.location-text{
+    width: 65%;
+    height: 70vh;
+    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+    background-image: url("../images/driver-using-navigation-traffic-app.jpg");
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 12%;
+}
+.location-text h3{
+    margin-top: 2%;
+    margin-bottom: 3%;
+    width: 60%;
+    font-size: 2rem;
+    color: #02529C;;
+    font-family: "Kanit", sans-serif;
+    font-weight: 410;
+}
+.location-text p{
+    width: 70%;
+    font-size: 1.5rem;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    line-height: 2.5rem;
+}
+.location-image{
+    width: 45%;
+    height: 70vh;
+    display: flex;
+    clip-path: polygon(35% 0, 100% 0%, 100% 100%, 0% 100%);
+    background-image: url("../images/driver-using-navigation-traffic-app.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: end;
+}
+.location-image img{
+    margin:1rem 1rem 0 0;
+    width: 40%;
+    height: 15vh;
+}
+.select-location{
+    margin-top: 5%;
+    width: 100%;
+    height: 80vh;
+}
+.select-location-title{
+    width: 9.5%;
+    height: 1vh;
+    margin: auto;
+    color: #02529C;
+    padding-top: 1%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+.select-location-title h1{
+    font-size: 1.35rem;
+    width:100%;
+    height: 1vh;
+    margin: auto;
+    font-family: "Kanit", sans-serif;
+}
+.select-location-title hr{
+    border: 0;
+    border-top: 2px solid #ff0000;
+}
+
+.select-location-map{
+    clip-path: polygon(0 5%, 100% 0, 100% 90%, 0 95%);
+    width: 100%;
+    height: 80vh;
+    background-color: #ff0000;
+    background-image: url("../images/iceland-road-bg.webp");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.select-location-map #map{
+    border-radius: 1rem;
+    width: 65%;
+    height: 50vh;
+    margin: auto;
+}
+.selection-select{
+    width: 100%;
+    height: 10vh;
+    /* background-color: aquamarine; */
+    margin-bottom: 4%;
+    padding-top: 2%;
+}
+.selection-select select{
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 2%;
+    height: 5vh;
+    width: 18%;
+    font-family: "Kanit", sans-serif;
+    background-color: #02529C;
+    color: aliceblue;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+@media (min-width:1024px){
+.location-text h3{
+    font-size: 1.5rem;
+}
+.location-text p{
+    width: 70%;
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+.location-image img{
+    margin:1rem 1rem 0 0;
+    width: 50%;
+    height: 20vh;
+}
+
+.select-location-title{
+    width: 9%;
+}
+.select-location-title h1{
+    font-size: 1rem;
+}
+}

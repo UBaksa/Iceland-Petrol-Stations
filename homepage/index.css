@@ -1,0 +1,444 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aliceblue;    
+    overflow-x: hidden;
+    position: relative;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    padding-left: 12%;
+    padding-right: 8%;
+}
+#active{
+    color: red;
+}
+.header-right{
+    width:  85%;
+    height:8vh;
+    transition: transform 0.5s ease-in;
+}
+.header-right ul{
+    padding: 1% 0 0 0;
+    display: flex;
+    justify-content:end;
+    list-style-type: none;
+    font-family: "Kanit", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #02529C;
+    gap: 2%;
+}
+.header-right ul li{
+transition: 0.2s;
+}
+.header-right a{
+    text-decoration: none;
+    color: #02529C;
+    transition-delay: 0.3s;
+    transition-duration: 0.3s;
+}
+.header-right li a:hover{
+    color: red;
+}
+.header-right button{
+    width: 5vw;
+    height: 4vh;
+    border: none;
+    font-family: "Kanit", sans-serif;
+    font-size: 1.2rem;
+    background-color: white;
+    border-radius: 1rem;
+}
+ .header-left{
+    width: 15%;
+    height: 8vh;
+    margin: auto;
+}
+.header-left img{
+    width: 8vw;
+    height: 8vh;
+}
+
+.info{
+    margin-top: 3%;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+}
+.info-text{
+    width: 70%;
+    height: 70vh;
+    padding: 1%;
+    padding-left: 12%;
+    background-image: url("../images/624882-2200x1375-desktop-hd-iceland-background-image.jpg");
+    background-attachment: fixed;
+    background-size: contain;
+    clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
+}
+.info-text h1{
+    font-size: 1.8rem;
+    width: 65%;
+    margin: 2% 0 2% 0;
+    font-weight: 500;
+    font-family: "Lexend", sans-serif;
+    color:#02529C;
+}
+.info-text h2{
+    font-size: 1.5rem;
+    width: 70%;
+    margin: 3% 0 1% 0;
+    font-weight: 500;
+    font-family: "Lexend", sans-serif;
+    color: #000000;
+}
+.info-text button{
+    margin-top: 5%;
+    border: none;
+    font-family: "Lexend", sans-serif;
+    background-color: rgba(240, 248, 255, 0.864);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    width: 20%;
+    height: 5vh;
+    color: #02529C;
+    transition-delay: 0.2s;
+    transition-duration: 0.3s;
+}
+.info-text button:hover{
+  background-color:   rgb(240, 248, 255);
+}
+.info-text span{
+    color: #02529C;
+}
+.info-images{
+    padding-left: 5%;
+    width: 45%;
+    height: 70vh;
+    background-image: url("../images/857_jadranka-2_f.jpg");
+    background-attachment: fixed;
+    background-size: contain;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 33% 100%);
+    display: flex;
+    justify-content: space-between;
+}
+.info-images-first img{
+    width: 100%;
+    height: 20vh;
+}
+.info-images-second img{
+    width:80%;
+}
+.services{
+    padding-left: 8%;
+    padding-right: 8%;
+    width: 100%;
+    height: 45vh;
+    margin-bottom: 2%;
+}
+.services-title{
+    width: 9%;
+    height: 2vh;
+    margin: auto;
+    color: #02529C;
+    padding-top: 1%;
+    margin-bottom: 4%;
+}
+.services-title h1{
+    font-size: 1.35rem;
+    width: 100%;
+    height: 0.5vh;
+    margin: auto;
+    font-family: "Kanit", sans-serif;
+}
+.services-title hr{
+    border: 0;
+    border-top: 2px solid #ff0000;
+}
+.services-boxes{
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    justify-content: space-between;
+}
+.services-box{
+    font-family: "Kanit", sans-serif;
+    font-weight: 350;
+    margin: auto;
+    height: 20vh;
+    width: 30%;
+}
+.services-box img{
+    display: block;
+    margin: auto;
+    margin-bottom: 3%;
+    width: 45%;
+    height:15vh;
+}
+.services-box h1{
+    font-weight: 400;
+    width: 100%;
+    height: 3vh;
+    padding-left: 35%;
+    padding: auto;
+    font-size: 1.6rem;
+    color: #02529C;
+}
+.services-box p{
+    margin-top: 1rem;
+    width: 100%;
+   text-align: center;
+   margin-top: 1rem;
+   color: #ff0000;
+   font-weight: 400;
+}
+.calculations{
+    width: 100%;
+    height: 35vh;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+    background-image: url("../images/pexels-photo-3602009.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.calculations-boxes{
+    padding-left: 8%;
+    padding-right: 8%;
+    width: 100%;
+    height: 35vh;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+}
+.calculations-box{
+    margin: auto;
+    padding: auto;
+    width: 20%;
+    height: 15vh;
+    /* background-color: aqua; */
+    border-radius: 1rem;
+    border: 4px #02529C solid;
+}
+.calculations-box h3{
+    color: aliceblue;
+    font-family: "Lexend", sans-serif;
+    font-size: 3rem;
+    width: 30%;
+    margin: auto;
+    margin-top: 5%;
+}
+.calculations-box p{
+    color: aliceblue;
+    font-size: 1.5rem;
+    text-align: start;
+    width: 100%;
+    height: 3vh;
+    margin: auto;
+    padding-left: 5%;
+    background-color:#02529C ;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    margin-top: 10%;
+    font-family: "Kanit", sans-serif;
+}
+.locations{
+    margin-top: 5%;
+    width: 100%;
+    height: 70vh;
+}
+#map 
+{ 
+    border-radius: 2rem;
+    width: 70%;
+    height: 55vh;
+    margin: auto;
+    margin-top: 4%;
+ }
+
+ .locations-text{
+    width: 6%;
+    height: 2vh;
+    margin: auto;
+    color: #02529C;
+    padding-top: 1%;
+    margin-bottom: 3%;
+}
+.locations-text h1{
+    font-size: 1.35rem;
+    width: 100%;
+    height: 0.5vh;
+    margin: auto;
+    font-family: "Kanit", sans-serif;
+}
+.locations-text hr{
+    border: 0;
+    border-top: 2px solid #ff0000;
+}
+footer{
+    margin-top: 5%;
+    width: 100%;
+    height: 35vh;
+    background-color: #02529C;
+    clip-path: polygon(0 14%, 100% 0%, 100% 100%, 0% 100%);
+    display: flex;
+    align-items: flex-end;
+
+}
+.footer-img{
+    width: 50%;
+    height: 35vh;
+    align-items: end;
+    padding-right: 10%;
+}
+
+.footer-img img{
+    margin-top: 10%;
+    float: right;
+    width: 40%;
+    height: 15vh;
+}
+.footer-text{
+    padding-left: 12%;
+    width: 50%;
+    height: 25vh;
+    display: flex;
+    gap: 30%;
+}
+.footer-text-info{
+    font-family: "Kanit", sans-serif;
+    color: aliceblue;
+    line-height: 2.5rem;
+}
+.footer-text-info p{
+    width: 80%;
+    font-size: 2rem;
+    margin: auto;
+}
+.footer-text-info ul{
+    list-style-type: ">  ";
+}
+.footer-text-info li{
+    width: 100%;
+    font-size: 1.2rem;
+}
+#preloader{
+    background: aliceblue url("../images/finalni\ logo\ za\ sajt.png") no-repeat center center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+@media (min-width:1024px){
+    .header-right ul{
+        font-size: 1.2rem;
+    }
+    .header-right button{
+        width: 8%;
+        height: 3vh;
+        font-size: 0.8rem;
+    }
+    .header-left img{
+        width: 8vw;
+        height: 8vh;
+    }
+    
+    .info-text{
+        background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+        clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
+    }
+    .info-text h1{
+        font-size: 1.4rem;
+        width: 70%;
+    }
+    .info-text h2{
+        font-size: 1.3rem;
+        width: 80%;
+    }
+    .info-text button{
+        margin-top: 10%;
+        font-family: "Lexend", sans-serif;
+        background-color: rgba(240, 248, 255, 0.864);
+        border-radius: 0.5rem;
+        cursor: pointer;
+        font-size: 1rem;
+        width: 25%;
+        height: 4vh;
+        color: #02529C;
+        transition-delay: 0.2s;
+        transition-duration: 0.3s;
+    }
+    .info-images{
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .info-images-first img{
+        margin-top: 5%;
+        margin-right: 5%;
+        width: 100%;
+        height: 15vh;
+    }
+
+    .services-title{
+        width: 8.5%;
+        color: #02529C;
+        padding-top: 5%;
+        margin-bottom: 4%;
+    }
+    .services-title h1{
+        font-size: 1rem;
+    }
+    .services-boxes{
+        padding-left: 2%;
+    }
+    .services-box h1{
+        font-size: 1.4rem;
+    }
+    .services-box p{
+        margin-top: 1rem;
+    }
+
+    .services{
+        margin-bottom: 5%;
+    }
+
+
+    .calculations{
+        height: 40vh;
+    }
+    .calculations-boxes{
+        padding-right: 4%;
+    }
+    .calculations-box p{
+        height: 4vh;
+        margin: auto;
+    }
+
+
+
+    
+     .locations-text{
+        width: 5.5%;
+    }
+    .locations-text h1{
+        font-size: 1rem;
+    }
+    
+    .footer-text{
+        height: 30vh;
+    }
+    .footer-text-info p{
+        font-size: 1.5rem;
+    }
+}

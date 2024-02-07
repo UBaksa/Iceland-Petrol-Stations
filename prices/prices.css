@@ -1,0 +1,352 @@
+.price-text{
+    margin-top: 2%;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+}
+.price-text-left{
+    width: 30%;
+    height: 70vh;
+    clip-path: polygon(0 0, 100% 0%,60% 100%, 0% 100%);
+    background-image: url("../images/refuel-to-car-gasoline-fuel-nozzle-in-vehicle-at-petrol-station-oil-price-petroleum-economy-inflation-and-commodity-concept-free-photo.jpg");
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.price-text-left img{
+    height: 20%;
+    margin-left: 2%;
+}
+.price-text-right{
+    width: 70%;
+    height: 70vh;
+    clip-path: polygon(15% 0, 100% 0%, 100% 100%, 0% 100%);
+    background-image: url("../images/refuel-to-car-gasoline-fuel-nozzle-in-vehicle-at-petrol-station-oil-price-petroleum-economy-inflation-and-commodity-concept-free-photo.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-right: 8%;
+}
+.price-text-right-text{
+    width: 100%;
+    float: right;
+    text-align: end;
+}
+.price-text-right-text h2{
+    float: right;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 450;
+    width: 70%;
+    font-family: "Lexend", sans-serif;
+}
+.price-text-right-text h3{
+    float: right;
+    font-size: 1.8rem;
+    width: 70%;
+    margin: 2rem 0 2rem 0;
+    font-weight: 500;
+    font-family: "Lexend", sans-serif;
+    color:#02529C;
+}
+.selection{
+    clip-path: polygon(0 1%, 100% 5%, 100% 96%, 0 87%);
+    margin-top: 5%;
+    width: 100%;
+    height: 70vh;
+    /* background-color: rgb(255, 255, 255); */
+    background-color: #ff0000;
+    padding-left: 8%;
+    padding-right: 2%;
+    background-image: url("../images/the-atlantic-road-norway-5k-7t-1366x768.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.selection-title{
+    width: 6%;
+    height: 1vh;
+    margin: auto;
+    color: #02529C;
+    padding-top: 1%;
+    margin-bottom: 2%;
+    margin-top: 3%;
+}
+.selection-title h1{
+    font-size: 1.35rem;
+    width:90%;
+    height: 0.5vh;
+    margin: auto;
+    font-family: "Kanit", sans-serif;
+}
+.selection-title hr{
+    border: 0;
+    border-top: 2px solid #ff0000;
+}
+.selection-select{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+}
+.selection select{
+    text-align: center;
+    padding: auto;
+    margin-top: 5%;
+    margin-left: 35%;/* nece margin auto nzm sto */
+    height: 5vh;
+    width: 20%;
+    font-family: "Kanit", sans-serif;
+    background-color: #02529C;
+    color: aliceblue;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+.selection-data{
+    display: flex;
+    width: 100%;
+    height: 38vh;
+    /* background-color: yellow; */
+}
+.selection-data-box{
+    margin: auto;
+    padding: auto;
+    width: 20%;
+    height: 15vh;
+    border-radius: 1rem;
+    border: 4px #02529C solid;
+}
+.selection-data-box h3{
+    color: aliceblue;
+    font-family: "Lexend", sans-serif;
+    font-size: 3rem;
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+}
+.selection-data-box p{
+    color: aliceblue;
+    font-size: 1.5rem;
+    text-align: start;
+    width: 100%;
+    height: 3vh;
+    margin: auto;
+    padding-left: 5%;
+    background-color:#02529C ;
+    border-bottom-left-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
+    margin-top: 10%  ;
+    font-family: "Kanit", sans-serif;
+}
+.notice{
+    width: 100%;
+    height: 20vh;
+}
+.notice-title{
+    width: 4%;
+    height: 1vh;
+    margin: auto;
+    color: #02529C;
+    padding-top: 1rem;
+    margin-bottom: 3rem;
+}
+.notice-title h1{
+    font-size: 1.35rem;
+    width: 100%;
+    height: 1vh;
+    margin: auto;
+    font-family: "Kanit", sans-serif;
+}
+.notice-title hr{
+    border: 0;
+    border-top: 2px solid #ff0000;
+}
+.notice-text {
+    width: 80%;
+    height: 10vh;
+    margin: auto;
+    padding-top: 1%;
+    text-align: center;
+    line-height: 2rem;
+    font-family: "Lexend", sans-serif;
+    font-size: 1.5rem;
+}
+.notice-text p{
+    margin-top: 2%;
+}
+.notice span{
+    color: #02529C;
+}
+.notice button{
+    margin-top: 2%;
+    border: none;
+    font-family: "Lexend", sans-serif;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 500;
+    width: 12%;
+    height: 5vh;
+    color: #02529C;
+    transition-delay: 0.5s;
+    transition-duration: 0.3s;
+}
+#preloader{
+    background: aliceblue url("../images/finalni\ logo\ za\ sajt.png") no-repeat center center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+.truck{
+    width: 100%;
+    height: 70vh;
+}
+.truck-title{
+    width: 7%;
+    height: 1vh;
+    margin: auto;
+    color: #02529C;
+    padding-top: 1%;
+    margin-bottom: 5%;
+    margin-top: 10%;
+}
+.truck-title h1{
+    font-size: 1.35rem;
+    width: 100%;
+    height: 1vh;
+    margin: auto;
+    font-family: "Kanit", sans-serif;
+}
+.truck-title hr{
+    border: 0;
+    border-top: 2px solid #ff0000;
+}
+.truck-prices{
+    clip-path: polygon(0 11%, 100% 3%, 100% 91%, 0 97%);
+    background-image: url("../images/can-semitrucks-drive-in-the-fast-lane.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70vh;
+    background-color: aqua;
+}
+
+.truck-prices select{
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 5%;
+    height: 5vh;
+    width: 18%;
+    font-family: "Kanit", sans-serif;
+    background-color: #02529C;
+    color: aliceblue;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+.truck-prices-data{
+    display: flex;
+    width: 100%;
+    height: 35vh;
+}
+.truck-prices-data-box{
+    margin: auto;
+    padding: auto;
+    width: 20%;
+    height: 15vh;
+    border-radius: 1rem;
+    border: 4px #02529C solid;
+}
+.truck-prices-data-box h3{
+    color: aliceblue;
+    font-family: "Lexend", sans-serif;
+    font-size: 3rem;
+    width: 8%;
+    margin: auto;
+    margin-top: 1%;
+}
+.truck-prices-data-box  p{
+    color: aliceblue;
+    font-size: 1.5rem;
+    text-align: start;
+    width: 100%;
+    height: 4.5vh;
+    margin: auto;
+    padding-left: 5%;
+    background-color:#02529C ;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    margin-top: 8%;
+    font-family: "Kanit", sans-serif;
+}
+@media (min-width:1024px){
+    
+    .price-text-right-text h2{
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+    }
+    .price-text-right-text h3{
+        font-size: 1.5rem;
+    }
+
+    .selection-title{
+        width: 5%;
+    }
+    .selection-title h1{
+        font-size: 1rem;
+        margin: auto;
+        width:100%;
+    }
+    .selection-data-box p{
+        width: 100%;
+        height: 4vh;
+        margin-top: 0%  ;
+    }
+
+    .notice-title{
+        width: 4%;
+    }
+    .notice-title h1{
+        font-size: 1rem;
+        width: 100%;
+        height: 0.5vh;
+    }
+    .notice-text {
+        font-size: 1.3rem;
+    }
+    .notice button{
+        font-size: 1rem;
+    }
+
+    .truck-title{
+        width: 6.5%;
+    }
+    .truck-title h1{
+        font-size: 1rem;
+    }
+    
+    .truck-prices-data-box{
+        margin: auto;
+        padding: auto;
+        width: 20%;
+        height: 15vh;
+        border-radius: 1rem;
+        border: 4px #02529C solid;
+    }
+    .truck-prices-data-box h3{
+        width: 50%;
+    }
+    .truck-prices-data-box  p{
+        height: 4vh;
+        margin-top: 4%;
+    }
+
+}
+
