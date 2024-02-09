@@ -12,6 +12,7 @@
     <link rel="icon" href="../images/logo icon.png" type="image/x-icon">
     <script src="./login.js" defer></script>
     <link rel="stylesheet" href="./login.css">
+    <script type="text/javascript" src="/path/to/sha.js"></script>
 </head>
 <body>
     <div id="preloader"></div>
@@ -23,9 +24,10 @@
         <ul>
             <li><a href="../homepage/index.html">Home</a></li>
             <li><a href="../prices/prices.html">Prices</a></li>
-            <li><a href="#" id="active">Locations</a></li>
+            <li><a href="../locations/locations.html">Locations</a></li>
             <li><a href="#">Membership</a></li>
-            <li><a href="../login/login.html">Login</a></li>
+            <li><a href="#">Promotions</a></li>
+            <li><a href="../login/login.html" id="active">Login</a></li>
             <button id="serbian">Srpski</button>
             <button id="english">Engleski</button>
         </ul>
@@ -44,7 +46,7 @@
         <span>Password</span>
         <input type="password" name="password" id="password" required>
     </div>
-    <button onClick="xd" id="btn">Log in</button>
+    <button type="submit" id="btn">Log in</button>
     </div>
 </div>
 

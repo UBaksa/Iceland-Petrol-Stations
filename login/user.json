@@ -1,24 +1,24 @@
 {
     "users": [
       {
-        "username": "user1",
-        "password": "password1"
+        "username": "bakir",
+        "password": "bakir123"
       },
       {
-        "username": "user2",
-        "password": "password2"
+        "username": "mehmed",
+        "password": "mehmed123"
       },
       {
-        "username": "user3",
-        "password": "password3"
+        "username": "daris",
+        "password": "daris123"
       },
       {
-        "username": "user4",
-        "password": "password4"
+        "username": "tito123",
+        "password": "tito12345"
       },
       {
-        "username": "user5",
-        "password": "password5"
+        "username": "josip123",
+        "password": "josip12345"
       }
     ]
   }
