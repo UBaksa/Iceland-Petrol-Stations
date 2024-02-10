@@ -72,7 +72,7 @@ async function getText(file) {
 
 getText(base)
 
-var map = L.map('map').setView([64.931, -19.021], 5)
+var map = L.map('map').setView([64.931, -19.021], 6)
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 15,
