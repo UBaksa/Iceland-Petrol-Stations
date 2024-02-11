@@ -1,0 +1,38 @@
+.membership-introduction{
+    width: 100%;
+    height: 60vh;
+    margin-top: 2%;
+    background-color: yellow;
+    display: flex;
+}
+
+.membership-introduction-text{
+    width: 60%;
+    height: 60vh;
+    background-color: aqua;
+    clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
+    padding: 1%;
+    padding-left: 12%;
+}
+.membership-introduction-text h1{
+    font-size: 1.8rem;
+    width: 65%;
+    margin: 2% 0 2% 0;
+    font-weight: 500;
+    font-family: "Lexend", sans-serif;
+    color:#02529C;  
+}
+.membership-introduction-text h2{
+    font-size: 1.5rem;
+    width: 70%;
+    margin: 5% 0 1% 0;
+    font-weight: 500;
+    font-family: "Lexend", sans-serif;
+    color: #000000;
+}
+.membership-introduction-img{
+    width: 40%;
+    height: 60vh;
+    background-color: blueviolet;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 33% 100%);
+}

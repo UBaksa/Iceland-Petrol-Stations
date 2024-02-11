@@ -2,23 +2,27 @@
     "users": [
       {
         "username": "bakir",
-        "password": "bakir123"
+        "password": "66404d111d86862d91aea7a602c234e696707d55fdd42f06ebc6ceb19e22544085ce6be4790c86c01d00f89a2992406348e3ffb9275adb1603aae1fec315534d"
       },
       {
         "username": "mehmed",
-        "password": "mehmed123"
+        "password": "068276e781a05e52341841efe3f6b95993595c2a2df1b6e039d53f64d6058c2e718f8d943d6dfdd6801753413c70d848015a5f294b723a9a914bd5477354d8ac"
       },
       {
         "username": "daris",
-        "password": "daris123"
+        "password": "3d8c090976488b854a42dabc1d024fc73ae9214854a9368ea7ecfc9d603af72b7c6470110ce35390b4b2b53879a85e2792eedff7b51ed26f9ad749ddb7518163"
       },
       {
         "username": "tito123",
-        "password": "tito12345"
+        "password": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e"
       },
       {
         "username": "josip123",
-        "password": "josip12345"
+        "password": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e"
+      },
+      {
+        "username":"admin",
+        "password":"7fcf4ba391c48784edde599889d6e3f1e47a27db36ecc050cc92f259bfac38afad2c68a1ae804d77075e8fb722503f3eca2b2c1006ee6f6c7b7628cb45fffd1d"
       }
     ]
   }
