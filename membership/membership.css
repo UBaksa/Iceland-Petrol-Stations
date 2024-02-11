@@ -1,18 +1,21 @@
 .membership-introduction{
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     margin-top: 2%;
-    background-color: yellow;
     display: flex;
 }
 
 .membership-introduction-text{
     width: 60%;
-    height: 60vh;
+    height:70vh;
     background-color: aqua;
     clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
     padding: 1%;
     padding-left: 12%;
+    background-image: url("../images/rent-car-hd.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .membership-introduction-text h1{
     font-size: 1.8rem;
@@ -24,15 +27,194 @@
 }
 .membership-introduction-text h2{
     font-size: 1.5rem;
-    width: 70%;
-    margin: 5% 0 1% 0;
+    width: 80%;
+    margin: 10% 0 1% 0;
     font-weight: 500;
     font-family: "Lexend", sans-serif;
     color: #000000;
 }
 .membership-introduction-img{
-    width: 40%;
-    height: 60vh;
+    width: 50%;
+    height: 70vh;
     background-color: blueviolet;
+    background-image: url("../images/rent-car-hd.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 33% 100%);
+}
+.membership-goods{
+    padding-left: 8%;
+    padding-right: 8%;
+    width: 100%;
+    height: 45vh;
+    margin-bottom: 2%;
+    margin-top: 5%;
+}
+.membership-goods-title{
+    width: 9%;
+    height: 2vh;
+    margin: auto;
+    color: #02529C;
+    padding-top: 1%;
+    margin-bottom: 4%;
+}
+.membership-goods span{
+    color: #02529C;
+}
+.membership-goods-title h1{
+    font-size: 1.35rem;
+    width: 100%;
+    height: 0.5vh;
+    margin: auto;
+    font-family: "Kanit", sans-serif;
+}
+.membership-goods-title hr{
+    border: 0;
+    border-top: 2px solid #ff0000;
+}
+.membership-goods-boxes{
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    justify-content: space-between;
+}
+.membership-goods-box{
+    font-family: "Kanit", sans-serif;
+    font-weight: 350;
+    margin: auto;
+    height: 20vh;
+    width: 30%;
+}
+.membership-goods-box img{
+    display: block;
+    margin: auto;
+    margin-bottom: 3%;
+    width: 45%;
+    height:15vh;
+}
+.membership-goods-box h1{
+    font-weight: 400;
+    width: 100%;
+    height: 3vh;
+    padding-left: 33%;
+    padding: auto;
+    font-size: 1.6rem;
+    color: #02529C;
+}
+.membership-goods-box p{
+    margin-top: 1rem;
+    width: 100%;
+   text-align: center;
+   margin-top: 1rem;
+   color: #ff0000;
+   font-weight: 400;
+}
+
+.membership-car{
+    width: 100%;
+    height: 70vh;
+    margin-bottom: 10%;
+}
+
+
+.selection{
+    clip-path: polygon(0 1%, 100% 5%, 100% 96%, 0 87%);
+    margin-top: 5%;
+    width: 100%;
+    height: 70vh;
+    background-color: #ff0000;
+    padding-left: 8%;
+    padding-right: 2%;
+    background-image: url("../images/Retail-Quarterly-Recap-LP-Hero-Image.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.selection-title{
+    width: 6%;
+    height: 1vh;
+    margin: auto;
+    color: #02529C;
+    padding-top: 1%;
+    margin-bottom: 2%;
+    margin-top: 3%;
+}
+.selection-title h1{
+    font-size: 1.35rem;
+    width:90%;
+    height: 0.5vh;
+    margin: auto;
+    font-family: "Kanit", sans-serif;
+}
+.selection-title hr{
+    border: 0;
+    border-top: 2px solid #ff0000;
+}
+.selection-select{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+}
+.selection select{
+    text-align: center;
+    padding: auto;
+    margin-top: 5%;
+    margin-left: 35%;/* nece margin auto nzm sto */
+    height: 5vh;
+    width: 20%;
+    font-family: "Kanit", sans-serif;
+    background-color: #02529C;
+    color: aliceblue;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+.selection-data{
+    display: flex;
+    width: 100%;
+    height: 38vh;
+    padding-right: 5%;
+    /* background-color: yellow; */
+}
+.selection-data-box{
+    margin: auto;
+    padding: auto;
+    width: 20%;
+    height: 15vh;
+    border-radius: 1rem;
+    border: 4px #02529C solid;
+}
+.selection-data-box h3{
+    text-align: center;
+    color: aliceblue;
+    font-family: "Lexend", sans-serif;
+    font-size: 3rem;
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+}
+#dieselOld{
+    font-size: 3rem;
+    color: red;
+    text-decoration: line-through white;
+}
+#bensinOld{
+    font-size: 3rem;
+    color: red;
+    text-decoration: line-through white;
+}
+.selection-data-box p{
+    color: aliceblue;
+    font-size: 1.5rem;
+    text-align: start;
+    width: 100%;
+    height: 5vh;
+    margin: auto;
+    padding-left: 5%;
+    background-color:#02529C ;
+    border-bottom-left-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
+    margin-top: 5%  ;
+    font-family: "Kanit", sans-serif;
 }
