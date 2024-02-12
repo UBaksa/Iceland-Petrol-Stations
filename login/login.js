@@ -69,19 +69,10 @@ const passwordDiv = document.getElementsByClassName("password")
             console.log("hsafkjsadsadsadsad")
         }
         else if(hashing(valuePass)!==user.password){
-          console.log(hash(passwordValue))
-            const newh4 = document.createElement("h4");
-            newh4.style.color='red'
-            newh4.style.fontSize='16px'
-            newh4.style.textAlign='start'
-          newh4.style.marginTop='0px'
-          newh4.innerText = `Invalid password`;
           console.log("hsafkjsa");
         }
         else{
-            passwordValidationMessageDiv.innerText=""
-            usernameValidationMessageDiv.innerText=""
-            localStorage.setItem("loggedInUser", usernameValue);
+            localStorage.setItem("logged", usernameValue);
             document.location.href='../homepage/index.html'
           console.log("hsafkjsaaaaaaaaa");
         }
