@@ -124,7 +124,7 @@ document.getElementById("pump").addEventListener("change", function() {
         return e.name === truckSelected
     })
 
-    let truckDiscount = 8.5
+    let truckDiscount = 5.3
     if(truckSelectedPump[0].company.length < 10){
        truckOwned.innerHTML = truckSelectedPump[0].company
     }
@@ -143,3 +143,22 @@ window.addEventListener("load",()=>{
         loader.style.display = "none";
     }, 1000);
 })
+
+let navLogin = document.getElementById("navlogin")
+
+function logedNav(){
+    let korisnik = localStorage.getItem("ulogovan");
+    if(korisnik){
+        navLogin.style.display = "none"
+    }
+    else{
+        navLogin.style.display = "inline-block"
+    }
+}
+
+window.addEventListener('storage', function(event) {
+    if (event.key === "ulogovan") {
+        logedNav();
+    }
+});
+logedNav();

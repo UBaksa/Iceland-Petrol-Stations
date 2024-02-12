@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <title>Iceland Petrol Stations | Locations</title>
+    <link rel="stylesheet" href="../homepage/index.css">
+    <link rel="stylesheet" href="./membership.css">
+    <script src="./membership.js" defer></script>
+    <link rel="icon" href="../images/logo icon.png" type="image/x-icon">
+    <link
+     href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+     rel="stylesheet"
+   />
+</head>
+<body>
+    <div id="preloader"></div>
+    <header>
+        <div class="header-left">
+        <img src="../images/finalni logo za sajt.png" alt="logo">
+        </div>
+        <div class="header-right">
+        <ul>
+            <li><a href="../homepage/index.html">Home</a></li>
+            <li><a href="../prices/prices.html">Prices</a></li>
+            <li><a href="../locations/locations.html" >Locations</a></li>
+            <li><a href="./membership.html" id="active">Membership</a></li>
+            <li><a href="../contact/contact.html">Contact</a></li>
+            <li><a href="../login/login.html" id="navlogin">Login</a></li>
+            <li><div id="google_translate_element"></div></li>
+        </ul>
+        </div>
+    </header>
+    <div id="member">
+    <div class="membership-introduction">
+        <div class="membership-introduction-text">
+            <h1>Building Membership Programs that Drive Brand Loyalty and Advocacy</h1>
+            <h2>Crafting effective membership programs is crucial for businesses seeking to foster brand loyalty and advocacy among their customers. By offering exclusive perks, rewards, and personalized experiences, companies can create a sense of belonging and appreciation among members. These programs not only incentivize repeat purchases but also encourage members to become vocal advocates for the brand, spreading positive word-of-mouth and attracting new customers. By continuously engaging with members, collecting feedback, and adapting to their evolving needs, businesses can build strong, enduring relationships that drive sustained growth and success.</h2>
+        </div>
+        <div class="membership-introduction-img"></div>
+    </div>
+        <div class="membership-goods">
+            <div class="membership-goods-title">
+                <h1><I>OUR BENEFITS</I></h1>
+                <br>
+                <br>
+                <hr>
+            </div>
+            <div class="membership-goods-boxes">
+                <div class="membership-goods-box">
+                    <img src="../images/10.png" alt="">
+                    <h1>Fuel discount</h1>
+                    <p>For fuels like <span>diesel</span> or <span>bensin95</span> as membership of our program,u have <span>10% discount</span>.For trucks are <span>extra</span> 8.5$ discount.</p>
+                </div>
+                <div class="membership-goods-box">
+                    <img src="../images/rewards_hero_phone.png" alt="">
+                    <h1>Valuable prizes</h1>
+                    <p>Only our members have the exclusive opportunity to win <span>valuable prizes</span>, ranging from <span>luxurious getaways</span> to essential <span>automotive parts and accessories</span>.</p></div>
+                <div class="membership-goods-box">
+                    <img src="../images/phone-membership.png" alt="">
+                    <h1>Fill more,grab more</h1>
+                    <p>With every top-up, you're not just filling your balance, you're gaining access to <span>exclusive offers and bonuses</span>.</p></div>
+            </div>
+        </div>
+        <div class="membership-car">
+            <div class="selection-title">
+                <h1><I>FOR CARS</I></h1>
+                <br>
+                <br>
+                <hr>
+            </div>
+            <div class="selection">
+                <div class="selection-select">
+                <select name="pump" id="pump">
+                </select>
+                </div>
+                <div class="selection-data">
+                    <div class="selection-data-box">
+                        <h3 id="dieselOld"></h3>
+                        <p>Diesel without discount</p>
+                    </div>
+                    <div class="selection-data-box">
+                        <h3 id="bensin"></h3>
+                        <p>Diesel with discount</p>
+                    </div>
+                    <div class="selection-data-box">
+                        <h3 id="diesel"></h3>
+                        <p>Bensin with discount</p>
+                    </div>
+                    <div class="selection-data-box">
+                        <h3 id="bensinOld"></h3>
+                        <p>Bensin without discount</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="truck-title">
+            <h1><I>FOR TRUCKS</I></h1>
+            <br>
+            <br>
+            <hr>
+        </div>
+        <div class="truck">
+            <div class="truck-prices">
+                <select name="truckPump" id="truckPump">
+                </select>
+                <div class="truck-prices-data">
+                    <div class="truck-prices-data-box">
+                        <h3 id="truckDiesel"></h3>
+                        <p>Diesel without discount</p>
+                    </div>
+                    <div class="truck-prices-data-box">
+                        <h3 id="truckOldDiesel"></h3>
+                        <p>Diesel with discount</p>
+                    </div>
+                    <div class="truck-prices-data-box">
+                        <h3 id="truckCompany"></h3>
+                        <p>Owned by</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+            <div id="not-member" class="not-member">
+                <div class="not-member-text">
+                    <div class="not-member-text-title">
+                        <H1><I>ATTENTION</I></H1>
+                        <br>
+                        <br>
+                        <hr>
+                    </div>
+                    <h2>You don`t have access to this page.You need to be <span>member</span> of our program.</h2>
+                    <h2>If you have been already our <span>member</span>,just <span>log in</span> down bellow.</h2>
+                    <a href="../login/login.html"><button>Log In</button></a>
+                </div>
+            </div>
+    <footer>
+        <div class="footer-text">
+            <div class="footer-text-info">
+                <p>Informations</p>
+                <ul>
+                    <a href="../prices/prices.html"><li>Prices</li></a>
+                    <a href="../locations/locations.html"><li>Locations</li></a>
+                    <a href="../membership/membership.html"><li>Membership</li></a>
+                    <a href="../contact/contact.html"><li>Contact</li></a>
+                </ul>
+            </div>
+            <div class="footer-text-info">
+                <p>Contact</p>
+                <ul>
+                    <li>Bakir Ujkanovic</li>
+                    <li>Novi Pazar,Serbia</li>
+                    <li>ujkanovicbakir@gmail.com</li>
+                    <li>github.com/UBaksa</li>
+                </ul>
+            </div> 
+        </div>
+        <div class="footer-img">
+            <img src="../images/finalni logo za sajt.png" alt="">
+        </div>
+    </footer>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateInit"></script>
+  <script>
+      function googleTranslateInit() {
+          new google.translate.TranslateElement(
+              { pageLanguage: "en" },
+              "google_translate_element"
+          );
+      }
+      googleTranslateInit();
+  </script>
+</body>
+</html>

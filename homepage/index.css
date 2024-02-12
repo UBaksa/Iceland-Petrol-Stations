@@ -143,6 +143,9 @@ transition: 0.2s;
     height: 45vh;
     margin-bottom: 2%;
 }
+.services span{
+    color: #02529C;
+}
 .services-title{
     width: 9%;
     height: 2vh;
@@ -327,6 +330,11 @@ footer{
 .footer-text-info li{
     width: 100%;
     font-size: 1.2rem;
+}
+
+.footer-text-info a{
+    color: aliceblue;
+    text-decoration: none;
 }
 #preloader{
     background: aliceblue url("../images/finalni\ logo\ za\ sajt.png") no-repeat center center;

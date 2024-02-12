@@ -6,6 +6,7 @@ window.addEventListener("load",()=>{
     }, 1000);
 })
 
+
 let users=[]
 
 //povlacimo usere koje smo mi kreirali jer nemam backend da povucem usere kao register f-ju.
@@ -43,37 +44,52 @@ password.addEventListener("input",()=>{
 //f-ja za hashovanje
 const hashing = (text) =>
 {
-    const hashObj = new jsSHA("SHA-512","TEXT",{numRounds: 1});
-    hashObj.update(text);
-    const hash = hashObj.getHash("HEX");
+    const hashObject = new jsSHA("SHA-512","TEXT",{numRounds: 1});
+    hashObject.update(text);
+    const hash = hashObject.getHash("HEX");
+    console.log(hash);
     return hash;
 }
 
 
 
 const btn = document.getElementById("btn")
-const usernameDiv = document.getElementsByClassName("username")
-const passwordDiv = document.getElementsByClassName("password")
-
+const usernameDiv = document.getElementById("usernamee")
+const passwordDiv = document.getElementById("passwordd")
+const alertt = document.createElement("h3")
 
     btn.addEventListener('click',()=>{
         const user=users.find(user=>user.username===valueUsername)
           if(!user){
-            const alertt = document.createElement("h3")
-            alert.innerHTML = "User is not created"
-            alert.fontSize = "1rem"
-            alert.fontFamily = "Kanit"
-            alert.color = "#02529C"
+            if(alertt.textContent == ""){
+            alertt.innerHTML = "User is not created"
+            alertt.style.fontSize = "1rem"
+            alertt.style.fontFamily = "Kanit"
+            alertt.style.color = "red"
             console.log(usernameDiv);
-            usernameDiv.appendChild(alertt)
-            console.log("hsafkjsadsadsadsad")
+              usernameDiv.appendChild(alertt)
+            }
+            console.log("nije dobar username")
         }
         else if(hashing(valuePass)!==user.password){
+<<<<<<< HEAD
           console.log("hsafkjsa");
         }
         else{
             localStorage.setItem("logged", usernameValue);
             document.location.href='../homepage/index.html'
           console.log("hsafkjsaaaaaaaaa");
+=======
+          console.log(hashing(valuePass))
+          console.log(valuePass);
+          console.log("nije dobra sifra");
+        }
+        else{
+          localStorage.setItem("ulogovan", valueUsername);
+          console.log(localStorage);
+            setTimeout(()=>{
+          document.location.href='../homepage/index.html'},1000)
+          console.log("sve radi");
+>>>>>>> 82f4b771313aa6bf6979bce2ce75bbe1176af6f2
         }
     })
