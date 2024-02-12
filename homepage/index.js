@@ -69,6 +69,8 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 getText(base);
 
+//loader
+
 let loader = document.getElementById("preloader")
 
 window.addEventListener("load",()=>{
@@ -77,3 +79,23 @@ window.addEventListener("load",()=>{
     }, 1500);
 })
 
+
+
+let navLogin = document.getElementById("navlogin")
+
+function logedNav(){
+    let korisnik = localStorage.getItem("ulogovan");
+    if(korisnik){
+        navLogin.style.display = "none"
+    }
+    else{
+        navLogin.style.display = "inline-block"
+    }
+}
+
+window.addEventListener('storage', function(event) {
+    if (event.key === "ulogovan") {
+        logedNav();
+    }
+});
+logedNav();

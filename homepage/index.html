@@ -17,6 +17,10 @@
      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
      crossorigin=""></script>
+     <link
+     href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+     rel="stylesheet"
+   />
 </head>
 <body>
     <div id="preloader"></div>
@@ -30,10 +34,9 @@
             <li><a href="../prices/prices.html">Prices</a></li>
             <li><a href="../locations/locations.html">Locations</a></li>
             <li><a href="../membership/membership.html">Membership</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="../contact/contact.html">Contact</a></li>
             <li><a href="../login/login.html" id="navlogin">Login</a></li>
-            <button id="serbian">Srpski</button>
-            <button id="english">Engleski</button>
+            <li><div id="google_translate_element"></div></li>
         </ul>
         </div>
     </header>
@@ -110,7 +113,7 @@
                     <a href="../prices/prices.html"><li>Prices</li></a>
                     <a href="../locations/locations.html"><li>Locations</li></a>
                     <a href="../membership/membership.html"><li>Membership</li></a>
-                    <a href="#"><li>Contact</li></a>
+                    <a href="../contact/contact.html"><li>Contact</li></a>
                 </ul>
             </div>
             <div class="footer-text-info">
@@ -127,5 +130,15 @@
             <img src="../images/finalni logo za sajt.png" alt="">
         </div>
     </footer>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateInit"></script>
+  <script>
+      function googleTranslateInit() {
+          new google.translate.TranslateElement(
+              { pageLanguage: "en" },
+              "google_translate_element"
+          );
+      }
+      googleTranslateInit();
+  </script>
 </body>
 </html>

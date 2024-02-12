@@ -4,22 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-    <title>Iceland Petrol Stations | Locations</title>
-    <link rel="stylesheet" href="../homepage/index.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <title>Iceland Petrol Stations | Contact us </title>
     <link rel="icon" href="../images/logo icon.png" type="image/x-icon">
-    <script src="./login.js" defer></script>
-    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+     <link
+     href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+     rel="stylesheet"
+   />
+    <link rel="stylesheet" href="./contact.css">
+    <script src="./contact.js" defer></script>
     <link rel="stylesheet" href="../homepage/index.css">
-    <script type="text/javascript" src="/../node_modules/jssha/dist/sha.js"></script>
-    <link
-    href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
-    rel="stylesheet"
-  />
 </head>
 <body>
+    
     <div id="preloader"></div>
     <header>
         <div class="header-left">
@@ -31,30 +36,12 @@
             <li><a href="../prices/prices.html">Prices</a></li>
             <li><a href="../locations/locations.html">Locations</a></li>
             <li><a href="../membership/membership.html">Membership</a></li>
-            <li><a href="../contact/contact.html">Contact</a></li>
-            <li><a href="../login/login.html" id="active" id="navlogin">Login</a></li>
+            <li><a href="#" id="active">Contact </a></li>
+            <li><a href="../login/login.html" id="navlogin">Login</a></li>
             <li><div id="google_translate_element"></div></li>
         </ul>
         </div>
     </header>
-
-<div class="login">
-    <div class="login-inputs">
-        <h1><i>LOGIN</i></h1>
-        <hr>
-        <div id="usernamee" class="username">
-        <span>Username</span>
-        <input type="text" id="username" required>
-    </div>
-    <div id="passwordd" class="password">
-        <span>Password</span>
-        <input type="password" name="password" id="password" required>
-        <h3 id="ime"></h3>
-    </div>
-    <button type="submit" id="btn">Log in</button>
-    </div>
-</div>
-
 
     <footer>
         <div class="footer-text">
@@ -64,7 +51,7 @@
                     <a href="../prices/prices.html"><li>Prices</li></a>
                     <a href="../locations/locations.html"><li>Locations</li></a>
                     <a href="../membership/membership.html"><li>Membership</li></a>
-                    <a href="../contact/contact.html"><li>Contact</li></a>
+                    <a href="./contact.html"><li>Contact</li></a>
                 </ul>
             </div>
             <div class="footer-text-info">
@@ -82,14 +69,14 @@
         </div>
     </footer>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateInit"></script>
-    <script>
-        function googleTranslateInit() {
-            new google.translate.TranslateElement(
-                { pageLanguage: "en" },
-                "google_translate_element"
-            );
-        }
-        googleTranslateInit();
-    </script>
+  <script>
+      function googleTranslateInit() {
+          new google.translate.TranslateElement(
+              { pageLanguage: "en" },
+              "google_translate_element"
+          );
+      }
+      googleTranslateInit();
+  </script>
 </body>
 </html>

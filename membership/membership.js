@@ -161,3 +161,49 @@ document.getElementById("pump").addEventListener("change", function() {
 }
 
 getText(base);
+
+
+let notMember = document.getElementById("not-member")
+console.log(notMember);
+let isMember = document.getElementById("member")
+
+function isLoged(){
+    let korisnik = localStorage.getItem("ulogovan");
+    if(korisnik){
+        notMember.style.display = "none"
+        isMember.style.display = "inline-block"  
+    }
+    else{
+        isMember.style.display = "none"
+        notMember.style.display = "inline-block"
+    }
+}
+
+window.addEventListener('storage', function(event) {
+    if (event.key === "ulogovan") {
+        isLoged();
+    }
+});
+isLoged()
+
+let navLogin = document.getElementById("navlogin")
+
+
+//ovo je da se makne iz navbara login
+function logedNav(){
+    let korisnik = localStorage.getItem("ulogovan");
+    if(korisnik){
+        navLogin.style.display = "none"
+    }
+    else{
+        navLogin.style.display = "inline-block"
+    }
+}
+
+window.addEventListener('storage', function(event) {
+    if (event.key === "ulogovan") {
+        logedNav();
+    }
+});
+logedNav();
+

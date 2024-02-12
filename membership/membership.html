@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="./membership.css">
     <script src="./membership.js" defer></script>
     <link rel="icon" href="../images/logo icon.png" type="image/x-icon">
+    <link
+     href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+     rel="stylesheet"
+   />
 </head>
 <body>
     <div id="preloader"></div>
@@ -24,14 +28,14 @@
             <li><a href="../homepage/index.html">Home</a></li>
             <li><a href="../prices/prices.html">Prices</a></li>
             <li><a href="../locations/locations.html" >Locations</a></li>
-            <li><a href="#" id="active">Membership</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="./membership.html" id="active">Membership</a></li>
+            <li><a href="../contact/contact.html">Contact</a></li>
             <li><a href="../login/login.html" id="navlogin">Login</a></li>
-            <button id="serbian">Srpski</button>
-            <button id="english">Engleski</button>
+            <li><div id="google_translate_element"></div></li>
         </ul>
         </div>
     </header>
+    <div id="member">
     <div class="membership-introduction">
         <div class="membership-introduction-text">
             <h1>Building Membership Programs that Drive Brand Loyalty and Advocacy</h1>
@@ -50,7 +54,7 @@
                 <div class="membership-goods-box">
                     <img src="../images/10.png" alt="">
                     <h1>Fuel discount</h1>
-                    <p>For fuels like <span>diesel</span> or <span>bensin95</span> as membership of our program,u have <span>10% discount</span>.</p>
+                    <p>For fuels like <span>diesel</span> or <span>bensin95</span> as membership of our program,u have <span>10% discount</span>.For trucks are <span>extra</span> 8.5$ discount.</p>
                 </div>
                 <div class="membership-goods-box">
                     <img src="../images/rewards_hero_phone.png" alt="">
@@ -122,7 +126,20 @@
                 </div>
             </div>
             </div>
-        </div>
+</div>
+            <div id="not-member" class="not-member">
+                <div class="not-member-text">
+                    <div class="not-member-text-title">
+                        <H1><I>ATTENTION</I></H1>
+                        <br>
+                        <br>
+                        <hr>
+                    </div>
+                    <h2>You don`t have access to this page.You need to be <span>member</span> of our program.</h2>
+                    <h2>If you have been already our <span>member</span>,just <span>log in</span> down bellow.</h2>
+                    <a href="../login/login.html"><button>Log In</button></a>
+                </div>
+            </div>
     <footer>
         <div class="footer-text">
             <div class="footer-text-info">
@@ -131,7 +148,7 @@
                     <a href="../prices/prices.html"><li>Prices</li></a>
                     <a href="../locations/locations.html"><li>Locations</li></a>
                     <a href="../membership/membership.html"><li>Membership</li></a>
-                    <a href="#"><li>Contact</li></a>
+                    <a href="../contact/contact.html"><li>Contact</li></a>
                 </ul>
             </div>
             <div class="footer-text-info">
@@ -148,5 +165,15 @@
             <img src="../images/finalni logo za sajt.png" alt="">
         </div>
     </footer>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateInit"></script>
+  <script>
+      function googleTranslateInit() {
+          new google.translate.TranslateElement(
+              { pageLanguage: "en" },
+              "google_translate_element"
+          );
+      }
+      googleTranslateInit();
+  </script>
 </body>
 </html>

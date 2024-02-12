@@ -310,3 +310,68 @@
     color: red;
     text-decoration: line-through white;
 }
+.not-member{
+    width: 100%;
+    height: 70vh;
+    background-color: yellow;
+    margin-top: 2%;
+    clip-path: polygon(0 4%, 100% 0%, 100% 87%, 0 96%);
+    background-image: url("../images/downtown-reykjavik-hero-1920x890.avif");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.not-member-text{
+    width: 50%;
+    height: 70vh;
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    padding-top: 1%;
+}
+.not-member span{
+    color: red;
+}
+.not-member-text-title{
+    width: 12%;
+    height: 1vh;
+    margin: auto;
+    color: #02529C;
+    padding-top: 1%;
+    margin-bottom: 20%;
+    margin-top: 3%;
+}
+.not-member-text-title h1{
+    font-size: 1.35rem;
+    width:100%;
+    height: 1vh;
+    margin: auto;
+    font-family: "Kanit", sans-serif;
+}
+.not-member-text-title hr{
+    border: 0;
+    border-top: 2px solid #ff0000;
+}
+.not-member-text h2{
+    font-family: "Kanit", sans-serif;
+    color: #02529C;
+    font-weight: 400;
+    margin-top: 2%;
+}
+.not-member-text button{
+    font-family: "Kanit", sans-serif;
+    font-size: 1.3rem;
+    width: 20%;
+    height: 4vh;
+    background-color: aliceblue;
+    border: 2px solid #02529C;
+    color: #02529C;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 10%;
+    transition-duration: 0.3s;
+    transition-delay: 0.3s;
+}
+.not-member-text button:hover{
+    color: red;
+}

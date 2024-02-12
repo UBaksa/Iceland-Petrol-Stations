@@ -54,20 +54,21 @@ const hashing = (text) =>
 
 
 const btn = document.getElementById("btn")
-// const usernameDiv = document.getElementsByClassName("username")
-// const passwordDiv = document.getElementsByClassName("password")
-
+const usernameDiv = document.getElementById("usernamee")
+const passwordDiv = document.getElementById("passwordd")
+const alertt = document.createElement("h3")
 
     btn.addEventListener('click',()=>{
         const user=users.find(user=>user.username===valueUsername)
           if(!user){
-            const alertt = document.createElement("h3")
-            alert.innerHTML = "User is not created"
-            alert.fontSize = "1rem"
-            alert.fontFamily = "Kanit"
-            alert.color = "#02529C"
+            if(alertt.textContent == ""){
+            alertt.innerHTML = "User is not created"
+            alertt.style.fontSize = "1rem"
+            alertt.style.fontFamily = "Kanit"
+            alertt.style.color = "red"
             console.log(usernameDiv);
-            usernameDiv.appendChild(alertt)
+              usernameDiv.appendChild(alertt)
+            }
             console.log("nije dobar username")
         }
         else if(hashing(valuePass)!==user.password){

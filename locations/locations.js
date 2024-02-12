@@ -78,3 +78,22 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 15,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
+
+let navLogin = document.getElementById("navlogin")
+
+function logedNav(){
+    let korisnik = localStorage.getItem("ulogovan");
+    if(korisnik){
+        navLogin.style.display = "none"
+    }
+    else{
+        navLogin.style.display = "inline-block"
+    }
+}
+
+window.addEventListener('storage', function(event) {
+    if (event.key === "ulogovan") {
+        logedNav();
+    }
+});
+logedNav();
