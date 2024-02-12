@@ -218,3 +218,95 @@
     margin-top: 5%  ;
     font-family: "Kanit", sans-serif;
 }
+
+.truck{
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 15%;
+}
+.truck-title{
+    width: 7%;
+    height: 1vh;
+    margin: auto;
+    color: #02529C;
+    padding-top: 1%;
+    margin-bottom: 5%;
+    margin-top: 10%;
+}
+.truck-title h1{
+    font-size: 1.35rem;
+    width: 100%;
+    height: 1vh;
+    margin: auto;
+    font-family: "Kanit", sans-serif;
+}
+.truck-title hr{
+    border: 0;
+    border-top: 2px solid #ff0000;
+}
+.truck-prices{
+    clip-path: polygon(0 11%, 100% 3%, 100% 91%, 0 97%);
+    background-image: url("../images/939550238653272a7e7799694012658_1280x720x0027745.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70vh;
+    background-color: aqua;
+}
+
+.truck-prices select{
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 5%;
+    height: 5vh;
+    width: 18%;
+    font-family: "Kanit", sans-serif;
+    background-color: #02529C;
+    color: aliceblue;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+.truck-prices-data{
+    display: flex;
+    width: 100%;
+    height: 35vh;
+    margin-top: 2%;
+}
+.truck-prices-data-box{
+    margin: auto;
+    padding: auto;
+    width: 16%;
+    height: 15vh;
+    border-radius: 1rem;
+    border: 4px #02529C solid;
+}
+.truck-prices-data-box h3{
+    text-align: center;
+    color: aliceblue;
+    font-family: "Lexend", sans-serif;
+    font-size: 3rem;
+    width: 100%;
+    margin: auto;
+    margin-top: 1%;
+}
+.truck-prices-data-box  p{
+    color: aliceblue;
+    font-size: 1.5rem;
+    text-align: start;
+    width: 100%;
+    height: 4.5vh;
+    margin: auto;
+    padding-left: 5%;
+    background-color:#02529C ;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    margin-top: 10%;
+    font-family: "Kanit", sans-serif;
+}
+#truckDiesel{
+    font-size: 3rem;
+    color: red;
+    text-decoration: line-through white;
+}

@@ -12,13 +12,14 @@ let data;
 //automobili
 let diesel = document.getElementById("diesel");
 let bensin = document.getElementById("bensin");
-let owned = document.getElementById("company");
 
 let dieselOld = document.getElementById("dieselOld")
 let bensinOld = document.getElementById("bensinOld")
 //kamioni
 let truckOwned =  document.getElementById("truckCompany")
 let truckDiesel = document.getElementById("truckDiesel")
+let truckOldDiesel = document.getElementById("truckOldDiesel")
+
 
 
 async function getText(file) {
@@ -50,13 +51,12 @@ async function getText(file) {
     }
 
     //ovo je za prve vrednosti jer se ne reloada window
-    diesel.innerHTML=data.results[0].diesel
-    bensin.innerHTML=data.results[0].bensin95
-    // company.innerHTML=data.results[0].company
+    diesel.innerHTML=(data.results[0].diesel-(data.results[0].diesel*discount)).toFixed(2)
+    bensin.innerHTML=(data.results[0].bensin95-(data.results[0].bensin95*discount)).toFixed(2)
 
 
     dieselOld.innerHTML=data.results[0].diesel
-    bensinOld.innerHTML=data.results[0].diesel
+    bensinOld.innerHTML=data.results[0].bensin95
 
     //za automobile.
 function updateSelectedPump() {
@@ -75,11 +75,7 @@ function updateSelectedPump() {
     bensin.innerHTML = (selectedPump[0].bensin95 - bensin95Discount).toFixed(2);
     dieselOld.innerHTML=selectedPump[0].diesel
     bensinOld.innerHTML=selectedPump[0].bensin95
-    // if (selectedPump[0].company.length <= 10) {
-    //     owned.innerHTML = selectedPump[0].company;
-    // } else {
-    //     owned.innerHTML = selectedPump[0].company.slice(0, 9) + "..";
-    // }
+
 }
 
 window.onload = function() {
@@ -109,12 +105,16 @@ document.getElementById("pump").addEventListener("change", function() {
     
     
     
-        truckDiesel.innerHTML = selectedTruckPump[0].diesel;
+        truckDiesel.innerHTML = selectedTruckPump[0].diesel-truckDiscount;
+        let truckDiscountNew = (selectedTruckPump[0].diesel-truckDiscount)*discount
+    truckOldDiesel.innerHTML = (selectedTruckPump[0].diesel-truckDiscountNew).toFixed(2)
+
         if (selectedTruckPump[0].company.length <= 10) {
             truckOwned.innerHTML = selectedTruckPump[0].company;
         } else {
             truckOwned.innerHTML = selectedTruckPump[0].company.slice(0, 9) + "..";
         }
+        
     }
     
     window.onload = function() {
@@ -154,6 +154,10 @@ document.getElementById("pump").addEventListener("change", function() {
          truckOwned.innerHTML = truckSelectedPump[0].company.slice(0,10) + "..."
     }
     truckDiesel.innerHTML = truckSelectedPump[0].diesel - truckDiscount
+
+    let truckDiscountNew = (truckSelectedPump[0].diesel-truckDiscount)*discount
+    console.log(truckDiscountNew);
+    truckOldDiesel.innerHTML = (truckSelectedPump[0].diesel-truckDiscountNew).toFixed(2)
 }
 
 getText(base);
