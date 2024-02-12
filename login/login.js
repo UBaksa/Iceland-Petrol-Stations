@@ -57,6 +57,7 @@ const btn = document.getElementById("btn")
 const usernameDiv = document.getElementById("usernamee")
 const passwordDiv = document.getElementById("passwordd")
 const alertt = document.createElement("h3")
+const alerttt = document.createElement("h3")
 
     btn.addEventListener('click',()=>{
         const user=users.find(user=>user.username===valueUsername)
@@ -70,26 +71,25 @@ const alertt = document.createElement("h3")
               usernameDiv.appendChild(alertt)
             }
             console.log("nije dobar username")
-        }
-        else if(hashing(valuePass)!==user.password){
-<<<<<<< HEAD
-          console.log("hsafkjsa");
-        }
-        else{
-            localStorage.setItem("logged", usernameValue);
-            document.location.href='../homepage/index.html'
-          console.log("hsafkjsaaaaaaaaa");
-=======
-          console.log(hashing(valuePass))
-          console.log(valuePass);
+          }
+          else if(hashing(valuePass)!==user.password){
+          alertt.innerHTML="";
+          if(alerttt.textContent == ""){
+            alerttt.innerHTML = "Wrong password"
+            alerttt.style.fontSize = "1rem"
+            alerttt.style.fontFamily = "Kanit"
+            alerttt.style.color = "red"
+              passwordDiv.appendChild(alerttt)
+            }
           console.log("nije dobra sifra");
         }
         else{
+          alerttt.innerHTML=""
+          alertt.innerHTML=""
           localStorage.setItem("ulogovan", valueUsername);
           console.log(localStorage);
             setTimeout(()=>{
           document.location.href='../homepage/index.html'},1000)
           console.log("sve radi");
->>>>>>> 82f4b771313aa6bf6979bce2ce75bbe1176af6f2
         }
     })
