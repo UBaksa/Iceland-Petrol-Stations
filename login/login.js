@@ -91,8 +91,20 @@ const alerttt = document.createElement("h3")
           alertt.innerHTML=""
           localStorage.setItem("ulogovan", valueUsername);
           console.log(localStorage);
+          Toastify({
+            text: "Successfully logged in.",
+            duration: 2000,
+            close: true,
+            gravity: "top", 
+            position: "right", 
+            backgroundColor: "#02529C", 
+            style:{
+                fontFamily:"Kanit",
+            },
+        
+          }).showToast()
             setTimeout(()=>{
-          document.location.href='../homepage/index.html'},1000)
+          document.location.href='../homepage/index.html'},2000)
           console.log("sve radi");
         }
     })

@@ -1,0 +1,100 @@
+.contact{
+    width: 100%;
+    height: 80vh;
+    margin-top: 2%;
+    clip-path: polygon(0 5%, 100% 0%, 100% 87%, 0 94%);
+    background-image: url("../images/0x0.webp");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact-inputs{
+    width: 50%;
+    height: 80vh;
+    background-color: white;
+    margin: auto;
+    padding-top: 1%;
+    text-align: center;
+}
+
+.contact-title{
+    width: 14%;
+    height: 1vh;
+    margin: auto;
+    color: #02529C;
+    padding-top: 1%;
+    margin-bottom: 10%;
+    text-align: center;
+}
+.contact-title h1{
+    font-size: 1.35rem;
+    width:100%;
+    height: 1vh;
+    margin: auto;
+    font-family: "Kanit", sans-serif;
+}
+.contact-title hr{
+    border: 0;
+    border-top: 2px solid #ff0000;
+}
+.contact-input{
+    margin: auto;
+    width: 80%;
+    height: 8vh;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.contact-input input{
+    font-family: "Kanit", sans-serif;
+    width: 30%;
+    height: 3vh;
+    margin: auto;
+    background-color: aliceblue;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    border: 2px solid #02529C;
+    color: #02529C;
+    cursor: pointer;
+}
+.contact-input span{
+    font-family: "Kanit", sans-serif;
+    font-size: 1.5rem;
+    color: #02529C;
+}
+.contact-input textarea{
+    background-color: aliceblue;
+    border-radius: 0.5rem;
+    border: #02529C 2px solid;
+    font-family: "Kanit", sans-serif;
+    color: #02529C;
+    font-weight: 500;
+    resize: none; 
+    height: 15vh;
+    width: 35%;
+}
+.contact-input:nth-child(4){
+    margin-left: 32%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 30vh;
+}
+.contact-input p{
+    margin-top: 5%;
+    font-family: "Kanit", sans-serif;
+    font-size: 1.5rem;
+    color: #02529C;
+}
+.contact-inputs button{
+    font-family: "Kanit", sans-serif;
+    font-size: 1.3rem;
+    width: 15%;
+    height: 4vh;
+    background-color: aliceblue;
+    border: 2px solid #02529C;
+    color: #02529C;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
