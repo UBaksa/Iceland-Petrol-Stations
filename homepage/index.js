@@ -32,7 +32,7 @@ async function getText(file) {
     let lon = data.results.map((e)=>{return e.geo.lon})
 
     let city = data.results.map((e)=>{return e.name})
-    let company = data.results.map((e)=>{return e.company})
+    
     console.log(city);
  
     // console.log(lat);

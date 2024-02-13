@@ -77,9 +77,10 @@ transition: 0.2s;
     height: 70vh;
     padding: 1%;
     padding-left: 12%;
-    background-image: url("../images/624882-2200x1375-desktop-hd-iceland-background-image.jpg");
+    background-image: url("../images/442.jpg");
     background-attachment: fixed;
     background-size: contain;
+    background-repeat: no-repeat;
     clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
 }
 .info-text h1{

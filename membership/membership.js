@@ -162,6 +162,7 @@ document.getElementById("pump").addEventListener("change", function() {
 
 getText(base);
 
+//da li je ulogovan
 
 let notMember = document.getElementById("not-member")
 console.log(notMember);
