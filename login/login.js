@@ -56,22 +56,34 @@ const hashing = (text) =>
 const btn = document.getElementById("btn")
 const usernameDiv = document.getElementById("usernamee")
 const passwordDiv = document.getElementById("passwordd")
-const alertt = document.createElement("h3")
+const alertt = document.createElement("h3")//ovo je za username
+const alerttt = document.createElement("h3")//ovo je za pw
 
     btn.addEventListener('click',()=>{
         const user=users.find(user=>user.username===valueUsername)
           if(!user){
             if(alertt.textContent == ""){
-            alertt.innerHTML = "User is not created"
+            alertt.innerHTML = "User is not registred"
             alertt.style.fontSize = "1rem"
             alertt.style.fontFamily = "Kanit"
             alertt.style.color = "red"
             console.log(usernameDiv);
               usernameDiv.appendChild(alertt)
             }
+            else if(alertt.textContent !== ""){
+              alertt.innerHTML = ""
+            }
             console.log("nije dobar username")
         }
         else if(hashing(valuePass)!==user.password){
+          if(alerttt.textContent == ""){
+            alerttt.innerHTML = "Password is incorrect"
+            alerttt.style.fontSize = "1rem"
+            alerttt.style.fontFamily = "Kanit"
+            alerttt.style.color = "red"
+            console.log(passwordDiv);
+              passwordDiv.appendChild(alerttt)
+            }
           console.log(hashing(valuePass))
           console.log(valuePass);
           console.log("nije dobra sifra");
