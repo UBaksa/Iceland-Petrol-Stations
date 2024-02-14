@@ -7,6 +7,25 @@ window.addEventListener("load",()=>{
 })
 
 
+let navLogin = document.getElementById("navlogin")
+
+function logedNav(){
+    let korisnik = localStorage.getItem("ulogovan");
+    if(korisnik){
+        navLogin.style.display = "none"
+    }
+    else{
+        navLogin.style.display = "inline-block"
+    }
+}
+window.addEventListener('storage', function(event) {
+  if (event.key === "ulogovan") {
+      logedNav();
+  }
+});
+logedNav()
+
+
 function contact(){
     const mailPattern = /^.+@.+\.[a-zA-Z]{2,3}$/
     const namePattern = /^[a-zA-Z\s]+$/

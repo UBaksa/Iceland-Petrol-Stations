@@ -66,7 +66,6 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
  
 
 }
-
 getText(base);
 
 //loader
