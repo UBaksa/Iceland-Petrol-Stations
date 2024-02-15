@@ -87,3 +87,56 @@ const btn = document.getElementById("btn")
 btn.addEventListener('click', () => {
     contact();
   })
+
+
+
+
+//phone responsive
+const btnn=document.getElementById('nav-mobile')
+const divv=document.getElementById('slide')
+const shorter=document.querySelector("#shorter")
+const longer=document.querySelector("#longer")
+var isMenuOn = false;
+
+btnn.addEventListener('click',()=>{
+    if(!isMenuOn){
+        divv.style.marginLeft="0px"
+        shorter.style.rotate="-45deg"
+        longer.style.rotate="45deg"
+        shorter.style.marginTop="-3vh"
+        longer.style.marginTop="2vh"
+
+
+
+    }
+    else{
+        divv.style.marginLeft="100%"
+        shorter.style.rotate="0deg"
+        longer.style.rotate="0deg"
+        shorter.style.marginTop="0vh"
+        longer.style.marginTop="0vh"
+
+
+    }
+    isMenuOn=!isMenuOn
+})
+
+//ovo je za phone da se makne login
+let navLoginn = document.getElementById("navloginn")
+
+function logedNavPhone(){
+    let korisnik = localStorage.getItem("ulogovan");
+    if(korisnik){
+        navLoginn.style.display = "none"
+    }
+    else{
+        navLoginn.style.display = "inline-block"
+    }
+}
+window.addEventListener('storage', function(event) {
+    if (event.key === "ulogovan") {
+        logedNavPhone();
+    }
+});
+
+logedNavPhone();

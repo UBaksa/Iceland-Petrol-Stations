@@ -192,3 +192,23 @@ btn.addEventListener('click',()=>{
     }
     isMenuOn=!isMenuOn
 })
+
+//ovo je za phone da se makne login
+let navLoginn = document.getElementById("navloginn")
+
+function logedNavPhone(){
+    let korisnik = localStorage.getItem("ulogovan");
+    if(korisnik){
+        navLoginn.style.display = "none"
+    }
+    else{
+        navLoginn.style.display = "inline-block"
+    }
+}
+window.addEventListener('storage', function(event) {
+    if (event.key === "ulogovan") {
+        logedNavPhone();
+    }
+});
+
+logedNavPhone();

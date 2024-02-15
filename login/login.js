@@ -108,3 +108,34 @@ const alerttt = document.createElement("h3")
           console.log("sve radi");
         }
     })
+
+    //responsive navbar za telefone
+const btnn=document.getElementById('nav-mobile')
+const divv=document.getElementById('slide')
+const shorter=document.querySelector("#shorter")
+const longer=document.querySelector("#longer")
+var isMenuOn = false;
+
+btnn.addEventListener('click',()=>{
+    if(!isMenuOn){
+        divv.style.marginLeft="0px"
+        shorter.style.rotate="-45deg"
+        longer.style.rotate="45deg"
+        shorter.style.marginTop="-3vh"
+        longer.style.marginTop="2vh"
+
+
+
+    }
+    else{
+        divv.style.marginLeft="100%"
+        shorter.style.rotate="0deg"
+        longer.style.rotate="0deg"
+        shorter.style.marginTop="0vh"
+        longer.style.marginTop="0vh"
+
+
+    }
+    isMenuOn=!isMenuOn
+})
+

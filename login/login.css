@@ -102,3 +102,34 @@
     }
 
 }
+
+@media (max-width:768px){
+    .login-inputs h1{
+        font-family: "Kanit", sans-serif;
+        width: 7%;
+        height: 3rem;
+        margin: auto;
+        font-size: 1rem;
+        color: #02529C;
+        margin-bottom: 1%;
+        padding-top: 20%;
+    }
+    .login-inputs hr{
+        border-top: none;
+    }
+    .username input{
+        width: 30%;
+    }
+    .username span{
+        font-size: 1rem;
+    }
+    .password input{
+        width: 30%;
+    }
+    .password span{
+        font-size: 1rem;
+    }
+    .login-inputs button{
+        font-size: 1rem;
+    }
+}
