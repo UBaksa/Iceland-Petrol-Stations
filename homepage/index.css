@@ -377,6 +377,23 @@ footer{
     background-color: #02529C;
   }
 
+  #google_translate_element{
+    width: 10vw;
+    height: 3vh;
+    overflow: hidden;
+    cursor: pointer;
+    margin-top: -2%;
+  }
+  #google_translate_element select{
+    font-weight: 400;
+    background-color: transparent;
+    font-family: "Kanit", sans-serif;
+    color: #02529C;
+    font-size: 16px;
+    border: 0px;
+    cursor: pointer;
+  }
+
 @media (min-width:1024px)and (max-width:1600px){
     .header-right ul{
         font-size: 1.2rem;
