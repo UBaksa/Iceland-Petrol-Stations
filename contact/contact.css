@@ -167,3 +167,79 @@
         margin-top: 35%;
     }
 }
+
+@media (max-width:430px) {
+    .contact-title{
+        width: 45%;
+        height: 1vh;
+        margin: auto;
+        color: #02529C;
+        padding-top: 10%;
+        margin-bottom: 40%;
+        text-align: center;
+    }
+    .contact-inputs{
+        width: 70%;
+    }
+    .contact-title h1{
+        font-size: 1rem;
+    }
+    .contact-title hr{
+        border-top: none;
+    }
+    .contact-input{
+        margin: auto;
+        width: 100%;
+        height: 8vh;
+        text-align: center;
+        margin-bottom: 1%;
+        margin-top: 5%;
+    }
+    
+    .contact-input input{
+        font-family: "Kanit", sans-serif;
+        width: 60%;
+        height: 3vh;
+        margin: auto;
+        background-color: aliceblue;
+        border-radius: 0.5rem;
+        font-weight: bold;
+        border: 2px solid #02529C;
+        color: #02529C;
+        cursor: pointer;
+    }
+    .contact-input span{
+        font-size: 1rem;
+    }
+    .contact-input textarea{
+        display: inline-block;
+        background-color: aliceblue;
+        border-radius: 0.5rem;
+        border: #02529C 2px solid;
+        font-family: "Kanit", sans-serif;
+        color: #02529C;
+        font-weight: 500;
+        resize: none; 
+        height: 15vh;
+        width: 60%;
+    }
+    
+    .contact-input p{
+        /* margin-top: 5%; */
+        font-family: "Kanit", sans-serif;
+        font-size: 1.5rem;
+        color: #02529C;
+    }
+    .contact-inputs button{
+        font-family: "Kanit", sans-serif;
+        font-size: 1.3rem;
+        width: 35%;
+        height: 4vh;
+        background-color: aliceblue;
+        border: 2px solid #02529C;
+        color: #02529C;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        margin-top: 45%;
+    }
+}
