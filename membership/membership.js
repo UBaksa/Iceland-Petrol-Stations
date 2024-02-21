@@ -51,12 +51,12 @@ async function getText(file) {
     }
 
     //ovo je za prve vrednosti jer se ne reloada window
-    diesel.innerHTML=(data.results[0].diesel-(data.results[0].diesel*discount)).toFixed(2)
-    bensin.innerHTML=(data.results[0].bensin95-(data.results[0].bensin95*discount)).toFixed(2)
+    diesel.innerHTML=(data.results[0].diesel-(data.results[0].diesel*discount)).toFixed(2) + "kr"
+    bensin.innerHTML=(data.results[0].bensin95-(data.results[0].bensin95*discount)).toFixed(2) + "kr"
 
 
-    dieselOld.innerHTML=data.results[0].diesel
-    bensinOld.innerHTML=data.results[0].bensin95
+    dieselOld.innerHTML=data.results[0].diesel + "kr"
+    bensinOld.innerHTML=data.results[0].bensin95 + "kr"
 
     //za automobile.
 function updateSelectedPump() {
@@ -71,10 +71,10 @@ function updateSelectedPump() {
     let dieselDiscount = selectedPump[0].diesel * discount
     let bensin95Discount = selectedPump[0].bensin95 * discount
 
-    diesel.innerHTML = (selectedPump[0].diesel - dieselDiscount).toFixed(2);
-    bensin.innerHTML = (selectedPump[0].bensin95 - bensin95Discount).toFixed(2);
-    dieselOld.innerHTML=selectedPump[0].diesel
-    bensinOld.innerHTML=selectedPump[0].bensin95
+    diesel.innerHTML = (selectedPump[0].diesel - dieselDiscount).toFixed(2) + "kr";
+    bensin.innerHTML = (selectedPump[0].bensin95 - bensin95Discount).toFixed(2) + "kr";
+    dieselOld.innerHTML=selectedPump[0].diesel + "kr"
+    bensinOld.innerHTML=selectedPump[0].bensin95 + "kr"
 
 }
 
@@ -105,9 +105,9 @@ document.getElementById("pump").addEventListener("change", function() {
     
     
     
-        truckDiesel.innerHTML = selectedTruckPump[0].diesel-truckDiscount;
+        truckDiesel.innerHTML = selectedTruckPump[0].diesel-truckDiscount + "kr";
         let truckDiscountNew = (selectedTruckPump[0].diesel-truckDiscount)*discount
-    truckOldDiesel.innerHTML = (selectedTruckPump[0].diesel-truckDiscountNew).toFixed(2)
+    truckOldDiesel.innerHTML = (selectedTruckPump[0].diesel-truckDiscountNew).toFixed(2) + "kr"
 
         if (selectedTruckPump[0].company.length <= 10) {
             truckOwned.innerHTML = selectedTruckPump[0].company;
@@ -153,14 +153,47 @@ document.getElementById("pump").addEventListener("change", function() {
     else{
          truckOwned.innerHTML = truckSelectedPump[0].company.slice(0,10) + "..."
     }
-    truckDiesel.innerHTML = truckSelectedPump[0].diesel - truckDiscount
+    truckDiesel.innerHTML = truckSelectedPump[0].diesel - truckDiscount + "kr"
 
     let truckDiscountNew = (truckSelectedPump[0].diesel-truckDiscount)*discount
     console.log(truckDiscountNew);
-    truckOldDiesel.innerHTML = (truckSelectedPump[0].diesel-truckDiscountNew).toFixed(2)
+    truckOldDiesel.innerHTML = (truckSelectedPump[0].diesel-truckDiscountNew).toFixed(2) + "kr"
 }
 
 getText(base);
+
+
+let navLogin = document.getElementById("navlogin")
+
+function logedNav() {
+    let korisnik = localStorage.getItem("ulogovan");
+    if (korisnik) {
+        navLogin.innerHTML = "Logout";
+        navLogin.href = "#"
+    } else {
+        navLogin.innerHTML = "Login";
+        navLogin.href = "../login/login.html";
+    }
+}
+
+navLogin.addEventListener('click', function() {
+    if (navLogin.innerHTML === "Logout") {
+        localStorage.removeItem("ulogovan");
+        window.location.reload();
+        event.preventDefault(); 
+        logedNav(); 
+    }
+});
+
+window.addEventListener('storage', function(event) {
+    if (event.key === "ulogovan") {
+        logedNav();
+    }
+});
+
+logedNav();
+
+
 
 //da li je ulogovan
 
@@ -186,27 +219,6 @@ window.addEventListener('storage', function(event) {
     }
 });
 isLoged()
-
-let navLogin = document.getElementById("navlogin")
-
-
-//ovo je da se makne iz navbara login
-function logedNav(){
-    let korisnik = localStorage.getItem("ulogovan");
-    if(korisnik){
-        navLogin.style.display = "none"
-    }
-    else{
-        navLogin.style.display = "inline-block"
-    }
-}
-
-window.addEventListener('storage', function(event) {
-    if (event.key === "ulogovan") {
-        logedNav();
-    }
-});
-logedNav();
 
 //responsive navbar za telefone
 const btn=document.getElementById('nav-mobile')
@@ -241,15 +253,25 @@ btn.addEventListener('click',()=>{
 //ovo je za phone da se makne login
 let navLoginn = document.getElementById("navloginn")
 
-function logedNavPhone(){
+function logedNavPhone() {
     let korisnik = localStorage.getItem("ulogovan");
-    if(korisnik){
-        navLoginn.style.display = "none"
-    }
-    else{
-        navLoginn.style.display = "inline-block"
+    if (korisnik) {
+        navLoginn.innerHTML = "Logout";
+        navLoginn.href = "#"
+    } else {
+        navLoginn.innerHTML = "Login";
+        navLoginn.href = "../login/login.html";
     }
 }
+
+navLoginn.addEventListener('click', function() {
+    if (navLoginn.innerHTML === "Logout") {
+        localStorage.removeItem("ulogovan");
+        event.preventDefault(); 
+        logedNavPhone(); 
+    }
+});
+
 window.addEventListener('storage', function(event) {
     if (event.key === "ulogovan") {
         logedNavPhone();

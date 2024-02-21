@@ -80,17 +80,51 @@ window.addEventListener("load",()=>{
 
 
 //ovo je za normalan navbar da se makne login
+// let navLogin = document.getElementById("navlogin")
+
+// function logedNav(){
+//     let korisnik = localStorage.getItem("ulogovan");
+//     if(korisnik){
+//         navLogin.innerHTML = "Logout"
+//     }
+//     else{
+//         if(navLogin.innerHTML === "Logout"){
+//             localStorage.clear();
+//         }
+//         navLogin.innerHTML = "Login"
+//         localStorage.clear();   
+//     }
+// }
+// window.addEventListener('storage', function(event) {
+//     if (event.key === "ulogovan") {
+//         logedNav();
+//     }
+// });
+
+// logedNav();
+
 let navLogin = document.getElementById("navlogin")
 
-function logedNav(){
+function logedNav() {
     let korisnik = localStorage.getItem("ulogovan");
-    if(korisnik){
-        navLogin.style.display = "none"
-    }
-    else{
-        navLogin.style.display = "inline-block"
+    if (korisnik) {
+        navLogin.innerHTML = "Logout";
+        navLogin.href = "#"
+    } else {
+        navLogin.innerHTML = "Login";
+        navLogin.href = "../login/login.html";
     }
 }
+
+navLogin.addEventListener('click', function() {
+    if (navLogin.innerHTML === "Logout") {
+        localStorage.removeItem("ulogovan");
+        window.location.reload();
+        event.preventDefault(); 
+        logedNav(); 
+    }
+});
+
 window.addEventListener('storage', function(event) {
     if (event.key === "ulogovan") {
         logedNav();
@@ -102,15 +136,25 @@ logedNav();
 //ovo je za phone da se makne login
 let navLoginn = document.getElementById("navloginn")
 
-function logedNavPhone(){
+function logedNavPhone() {
     let korisnik = localStorage.getItem("ulogovan");
-    if(korisnik){
-        navLoginn.style.display = "none"
-    }
-    else{
-        navLoginn.style.display = "inline-block"
+    if (korisnik) {
+        navLoginn.innerHTML = "Logout";
+        navLoginn.href = "#"
+    } else {
+        navLoginn.innerHTML = "Login";
+        navLoginn.href = "../login/login.html";
     }
 }
+
+navLoginn.addEventListener('click', function() {
+    if (navLoginn.innerHTML === "Logout") {
+        localStorage.removeItem("ulogovan");
+        event.preventDefault(); 
+        logedNavPhone(); 
+    }
+});
+
 window.addEventListener('storage', function(event) {
     if (event.key === "ulogovan") {
         logedNavPhone();

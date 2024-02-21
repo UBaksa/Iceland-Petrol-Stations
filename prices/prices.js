@@ -35,8 +35,8 @@ async function getText(file) {
         }
         pump.appendChild(optionn)
     }
-    diesel.innerHTML=data.results[0].diesel
-    bensin.innerHTML=data.results[0].bensin95
+    diesel.innerHTML=data.results[0].diesel + "kr"
+    bensin.innerHTML=data.results[0].bensin95 + "kr"
     company.innerHTML=data.results[0].company
 function updateSelectedPump() {
     let selectedValue = document.getElementById("pump").value;
@@ -49,8 +49,8 @@ function updateSelectedPump() {
 
 
 
-    diesel.innerHTML = selectedPump[0].diesel;
-    bensin.innerHTML = selectedPump[0].bensin95;
+    diesel.innerHTML = selectedPump[0].diesel + "kr";
+    bensin.innerHTML = selectedPump[0].bensin95 + "kr";
     if (selectedPump[0].company.length <= 10) {
         owned.innerHTML = selectedPump[0].company;
     } else {
@@ -85,7 +85,7 @@ document.getElementById("pump").addEventListener("change", function() {
     
     
     
-        truckDiesel.innerHTML = selectedTruckPump[0].diesel;
+        truckDiesel.innerHTML = selectedTruckPump[0].diesel + "kr";
         if (selectedTruckPump[0].company.length <= 10) {
             truckOwned.innerHTML = selectedTruckPump[0].company;
         } else {
@@ -131,7 +131,7 @@ document.getElementById("pump").addEventListener("change", function() {
     else{
          truckOwned.innerHTML = truckSelectedPump[0].company.slice(0,10) + "..."
     }
-    truckDiesel.innerHTML = truckSelectedPump[0].diesel - truckDiscount
+    truckDiesel.innerHTML = truckSelectedPump[0].diesel - truckDiscount + "kr"
 }
 
 getText(base);
@@ -146,21 +146,32 @@ window.addEventListener("load",()=>{
 
 let navLogin = document.getElementById("navlogin")
 
-function logedNav(){
+function logedNav() {
     let korisnik = localStorage.getItem("ulogovan");
-    if(korisnik){
-        navLogin.style.display = "none"
-    }
-    else{
-        navLogin.style.display = "inline-block"
+    if (korisnik) {
+        navLogin.innerHTML = "Logout";
+        navLogin.href = "#"
+    } else {
+        navLogin.innerHTML = "Login";
+        navLogin.href = "../login/login.html";
     }
 }
+
+navLogin.addEventListener('click', function() {
+    if (navLogin.innerHTML === "Logout") {
+        localStorage.removeItem("ulogovan");
+        window.location.reload();
+        event.preventDefault(); 
+        logedNav(); 
+    }
+});
 
 window.addEventListener('storage', function(event) {
     if (event.key === "ulogovan") {
         logedNav();
     }
 });
+
 logedNav();
 
 //responsive navbar za telefone
@@ -196,15 +207,25 @@ btn.addEventListener('click',()=>{
 //ovo je za phone da se makne login
 let navLoginn = document.getElementById("navloginn")
 
-function logedNavPhone(){
+function logedNavPhone() {
     let korisnik = localStorage.getItem("ulogovan");
-    if(korisnik){
-        navLoginn.style.display = "none"
-    }
-    else{
-        navLoginn.style.display = "inline-block"
+    if (korisnik) {
+        navLoginn.innerHTML = "Logout";
+        navLoginn.href = "#"
+    } else {
+        navLoginn.innerHTML = "Login";
+        navLoginn.href = "../login/login.html";
     }
 }
+
+navLoginn.addEventListener('click', function() {
+    if (navLoginn.innerHTML === "Logout") {
+        localStorage.removeItem("ulogovan");
+        event.preventDefault(); 
+        logedNavPhone(); 
+    }
+});
+
 window.addEventListener('storage', function(event) {
     if (event.key === "ulogovan") {
         logedNavPhone();

@@ -7,23 +7,34 @@ window.addEventListener("load",()=>{
 })
 
 
-let navLogin = document.getElementById("navlogin")
+let navLogin = document.getElementById("navloginn")
 
-function logedNav(){
+function logedNav() {
     let korisnik = localStorage.getItem("ulogovan");
-    if(korisnik){
-        navLogin.style.display = "none"
-    }
-    else{
-        navLogin.style.display = "inline-block"
+    if (korisnik) {
+        navLogin.innerHTML = "Logout";
+        navLogin.href = "#"
+    } else {
+        navLogin.innerHTML = "Login";
+        navLogin.href = "../login/login.html";
     }
 }
-window.addEventListener('storage', function(event) {
-  if (event.key === "ulogovan") {
-      logedNav();
-  }
+
+navLogin.addEventListener('click', function() {
+    if (navLogin.innerHTML === "Logout") {
+        localStorage.removeItem("ulogovan");
+        event.preventDefault(); 
+        logedNav(); 
+    }
 });
-logedNav()
+
+window.addEventListener('storage', function(event) {
+    if (event.key === "ulogovan") {
+        logedNav();
+    }
+});
+
+logedNav();
 
 
 function contact(){
@@ -34,14 +45,14 @@ function contact(){
     const fullName = document.getElementById("fullName");
     const fullNameValue = fullName.value
     const nameError = document.getElementById("nameError")
-    nameError.style.fontSize = "1rem"
+    nameError.style.fontSize = "1.2rem"
     nameError.style.fontFamily = "Kanit"
     nameError.style.color = "red"
 
     const email = document.getElementById("email")
     const emailValue = email.value
     const emailError = document.getElementById("emailError")
-    emailError.style.fontSize = "1rem"
+    emailError.style.fontSize = "1.2rem"
     emailError.style.fontFamily = "Kanit"
     emailError.style.color = "red"
 
@@ -50,7 +61,7 @@ function contact(){
     const messageValue = message.value
     const messageError= document.getElementById("messageError")
     const messageTest = messageValue !== ""
-    messageError.style.fontSize = "1rem"
+    messageError.style.fontSize = "1.2rem"
     messageError.style.fontFamily = "Kanit"
     messageError.style.color = "red"
     
@@ -122,17 +133,27 @@ btnn.addEventListener('click',()=>{
 })
 
 //ovo je za phone da se makne login
-let navLoginn = document.getElementById("navloginn")
+let navLoginn = document.getElementById("navlogin")
 
-function logedNavPhone(){
+function logedNavPhone() {
     let korisnik = localStorage.getItem("ulogovan");
-    if(korisnik){
-        navLoginn.style.display = "none"
-    }
-    else{
-        navLoginn.style.display = "inline-block"
+    if (korisnik) {
+        navLoginn.innerHTML = "Logout";
+        navLoginn.href = "#"
+    } else {
+        navLoginn.innerHTML = "Login";
+        navLoginn.href = "../login/login.html";
     }
 }
+
+navLoginn.addEventListener('click', function() {
+    if (navLoginn.innerHTML === "Logout") {
+        localStorage.removeItem("ulogovan");
+        event.preventDefault(); 
+        logedNavPhone(); 
+    }
+});
+
 window.addEventListener('storage', function(event) {
     if (event.key === "ulogovan") {
         logedNavPhone();

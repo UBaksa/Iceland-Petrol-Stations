@@ -43,13 +43,14 @@
     width: 80%;
     height: 8vh;
     text-align: center;
-    margin-bottom: 1%;
+    margin-bottom: 3%;
 }
 
 .contact-input input{
     font-family: "Kanit", sans-serif;
+    font-size: 1.1rem;
     width: 30%;
-    height: 3vh;
+    height: 4vh;
     margin: auto;
     background-color: aliceblue;
     border-radius: 0.5rem;
@@ -64,6 +65,7 @@
     color: #02529C;
 }
 .contact-input textarea{
+    font-size: 1.2rem;
     display: inline-block;
     background-color: aliceblue;
     border-radius: 0.5rem;
